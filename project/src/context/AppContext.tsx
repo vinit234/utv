@@ -41,7 +41,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
 
   // Initialize socket connection
   useEffect(() => {
-    const newSocket = io('http://localhost:3002');
+    const newSocket = io('https://utv-g1q0.onrender.com');
     setSocket(newSocket);
 
     // Socket event listeners
